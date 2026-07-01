@@ -5,7 +5,7 @@
 
 ## Overview
 
-This project performs statistical decomposition and noise characterization of ground motion time series from four continuously operating GNSS (Global Navigation Satellite System) stations in the Pacific Northwest and Northern California. Data is sourced from the EarthScope GAGE facility, processed by Central Washington University (CWU) in the NAM14 North America-fixed reference frame.
+This project quantifies how much least squares underestimates uncertainty when noise is colored rather than white/Gaussian/independent. It performs statistical decomposition and noise characterization of ground motion time series from four continuously operating GNSS (Global Navigation Satellite System) stations in the Pacific Northwest and Northern California. Data is sourced from the EarthScope GAGE facility, processed by Central Washington University (CWU) in the NAM14 North America-fixed reference frame.
 
 Motivated by the geodetic signal processing research of Dr. Amanda Thomas's Observational Seismology Research Group at UC Davis.
 

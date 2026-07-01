@@ -267,7 +267,7 @@ Ya feel?
 freqs, power = periodogram(resid_p349_north, fs=365.25)
 I did print(freqs[:10]) and got:
 [0. 0.04854466 0.09708931 0.14563397 0.19417863 0.24272329 0.29126794 0.3398126  0.38835726 0.43690191]
-This array lists the frequencies of all found patterns. It lists each frequency in order. 
+This array lists the frequencies of the first ten found patterns. It lists each frequency in order. 
 The longest frequency, as we can see, has 0.049 cycles per year, which is apparently ~20.6 yrs.
 '''
 
@@ -425,7 +425,7 @@ print("alpha for for frequencies less than 10^(0.7) are as follows:")
 for key, value in residuals.items():
     freqs, power = periodogram(value, fs=365.25)
     bin_centers, bin_means = bin_psd(freqs, power)
-    mask = (bin_centers < 5) & (~np.isnan(bin_means))
+    mask = (bin_centers < 5) & (~np.isnan(bin_means)) #Prior mistake I made: ensure each event in the & statement is in parenthesis
     fit_freqs = bin_centers[mask]
     fit_power = bin_means[mask]
     log_f = np.log10(fit_freqs)
