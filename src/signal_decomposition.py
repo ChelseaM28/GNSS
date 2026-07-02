@@ -71,7 +71,7 @@ from scipy.signal import periodogram
 import matplotlib.pyplot as plt
 
 with open("metadata.json", "r") as f:
-    metadata = json.load(f)
+    metadata = json.load(f) #I dont actually use this in this script.
 
 
 p349 = pd.read_json("p349.json", orient="records")
